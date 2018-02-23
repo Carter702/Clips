@@ -1,41 +1,59 @@
+<!-- popup.html  -->
+
 <!doctype html>
+
 <!--
- This page is shown when the extension button is clicked, because the
- "browser_action" field in manifest.json contains the "default_popup" key with
- value "popup.html".
- -->
-<html>
-  <head>
-    <title>Clipsy Popup Page</title>
-    <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-      }
+    This page is shown when the extension button is clicked, because the
+    "browser_action" field in manifest.json contains the "default_popup" key with
+    value "popup.html".
+  -->
+<html lang="en-US"/>
+<head>
+  <title>Clips Chrome Extension</title>
+  <style type="text/css">
+    html {
+    height: 100%;
+    }
+    
+    body {
+    margin: 0;
+    white-space: nowrap;
+    width: 400px;
+    min-height: 200px;
+    }
 
-      h1 {
-        font-size: 15px;
-      }
+.header {
+  background-color: darkorange;
+  padding: 10px 40px;
+  color: white;
+  text-align: center;
+    }
+      
+    h1 {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    }
 
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
+    #container {
+    align-items: center;
+    text-align: center;
+    margin: flex;
+    justify-content: space-between;
+    }
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
-    <script src="popup.js"></script>
-  </head>
+  </style>
 
-  <body>
-    <h1>Clips</h1>
-    <div id="container">
-    </div>
-  </body>
+  <script src="popup.js"></script>
+</head>
+<body>
+<div id="myDIV" class="header">
+  <h2>Clips Clipboard</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">New</span>
+</div>
+<ul id="myUL">
+    <li>Add New Item</li>
+</ul>
+</body>
 </html>
