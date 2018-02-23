@@ -1,0 +1,22 @@
+// manifest.json
+
+{
+    "manifest_version": 2,
+    
+    "name": "Clips",
+    "version": "0.1",
+    "description": "Clipboard Chrome Extension",
+
+    "browser_action": {
+	"default_title": "Welcome to Clipsy!",
+	"default_icon": "Resources/clipboardBW.png",
+	"default_popup": "popup.html"
+    },
+    "icons": { "48": "Resources/icon48.png" },
+    "permissions": [
+	"activeTab",
+	"storage"
+    ]
+    
+}// end manifest
+
