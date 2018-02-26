@@ -1,0 +1,30 @@
+    html {
+    height: 100%;
+    }
+    
+    body {
+    margin: 0;
+    white-space: nowrap;
+    width: 400px;
+    min-height: 200px;
+    }
+
+.header {
+  background-color: darkorange;
+  padding: 10px 40px;
+  color: white;
+  text-align: center;
+    }
+      
+    h2 {
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    }
+
+    #container {
+    align-items: center;
+    text-align: center;
+    margin: flex;
+    justify-content: space-between;
+    }

@@ -10,47 +10,15 @@
 <html lang="en-US"/>
 <head>
   <title>Clips Chrome Extension</title>
-  <style type="text/css">
-    html {
-    height: 100%;
-    }
-    
-    body {
-    margin: 0;
-    white-space: nowrap;
-    width: 400px;
-    min-height: 200px;
-    }
-
-.header {
-  background-color: darkorange;
-  padding: 10px 40px;
-  color: white;
-  text-align: center;
-    }
-      
-    h1 {
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
-    }
-
-    #container {
-    align-items: center;
-    text-align: center;
-    margin: flex;
-    justify-content: space-between;
-    }
-
-  </style>
-
+  <link rel="stylesheet" type="text/css" href="clipstyle.css">
   <script src="popup.js"></script>
 </head>
+
 <body>
 <div id="myDIV" class="header">
-  <h2>Clips Clipboard</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">New</span>
+  <h2>Clips</h2>
+  <input type="text" id="myInput" placeholder="New Clip...">
+  <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 <ul id="myUL">
     <li>Add New Item</li>
