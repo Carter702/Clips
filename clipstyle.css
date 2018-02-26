@@ -3,13 +3,16 @@
     box-sizing: border-box;
 }
 
-/* Style header font/color */
-h2 {
-    font-family: monospace;  
-    font-size: 20px;
-    margin: 5px;
-    letter-spacing: 10px;
-}
+html {
+    height: 100%;
+    }
+    
+body {
+    margin: 0;
+    white-space: nowrap;
+    width: 400px;
+    min-height: 190px;
+    }
 
 /* Remove margins and padding from the list */
 ul {
@@ -25,6 +28,11 @@ ul li {
     background: #dfdfdf;
     font-size: 18px;
     transition: 0.2s;
+    border-bottom: 0.5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
 }
 
 /* Make list items unselectable */
@@ -58,30 +66,6 @@ ul li.checked::before {
     width: 7px;
 }
 
-/* Style close button */
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-    background-color: #f44336;
-    color: white;
-}
-
-html {
-    height: 100%;
-    }
-    
-body {
-    margin: 0;
-    white-space: nowrap;
-    width: 400px;
-    min-height: 200px;
-    }
-
 /* Header styling */
 .header {
   background-color: darkorange;
@@ -97,6 +81,14 @@ body {
     clear: both;
 }
 
+/* Style header font/color */
+h2 {
+    font-family: monospace;  
+    font-size: 25px;
+    margin: 5px;
+    letter-spacing: 10px;
+}
+
 /* Style input */
 input {
     border: none;
@@ -108,6 +100,16 @@ input {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+/* Style settings button */
+#settingsIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
 }
 
 /* Style Add button */
