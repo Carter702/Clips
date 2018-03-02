@@ -20,6 +20,10 @@ ul {
     padding: 0;
 }
 
+/* Create scrollable list */
+nav ul{height:200px; width:18%;}
+nav ul{overflow:hidden; overflow-y:scroll;}
+
 /* Style list items */
 ul li {
     cursor: pointer;
@@ -125,6 +129,3 @@ input {
     transition: 0.3s;
 }
 
-.newCLIP:hover {
-    background-color: #bbb;
-}

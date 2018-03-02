@@ -16,7 +16,7 @@
     "permissions": [
 	"activeTab",
 	"storage"
-    ]
+        ]
     
 }// end manifest
 
